@@ -1,11 +1,13 @@
-import MyComponent from "./MyComponent";
+import Counter from "./Counter";
+import { Say } from "./Say";
 
 function App() {
   const js = "javascript";
   return (
-    <MyComponent name={"React!"} favoriteNumber={7}>
-      리액트
-    </MyComponent>
+    <>
+      <Counter></Counter>
+      <Say></Say>
+    </>
   );
 }
 
