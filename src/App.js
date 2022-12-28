@@ -3,6 +3,7 @@ import Counter from "./Counter";
 import { EventPractice } from "./EventPractice";
 import RedfSample from "./RefSample";
 import { Say } from "./Say";
+import ScrollBox from "./ScrollBox";
 import ValidationSample from "./ValidationSample";
 
 class App extends Component {
@@ -15,6 +16,10 @@ class App extends Component {
         <EventPractice />
         <ValidationSample></ValidationSample>
         <RedfSample />
+        <ScrollBox ref={(ref) => (this.ScrollBox = ref)} />
+        <button onClick={() => this.ScrollBox.scrollToBottom()}>
+          맨 밑으로
+        </button>
       </>
     );
   }
