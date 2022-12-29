@@ -5,6 +5,7 @@ import RedfSample from "./RefSample";
 import { Say } from "./Say";
 import ScrollBox from "./ScrollBox";
 import ValidationSample from "./ValidationSample";
+import { IterationSample } from "./IterationSample";
 
 class App extends Component {
   js = "javascript";
@@ -20,6 +21,7 @@ class App extends Component {
         <button onClick={() => this.ScrollBox.scrollToBottom()}>
           맨 밑으로
         </button>
+        <IterationSample />
       </>
     );
   }
